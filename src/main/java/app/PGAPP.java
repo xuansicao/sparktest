@@ -24,7 +24,7 @@ public class PGAPP {
 
         //查询hive数据
         HiveToPG.toPG();
-        PGTruncate.trunData2(con,"dataman.test_lock_pid");
+        //PGTruncate.trunData2(con,"dataman.test_lock_pid");
 
 
 
