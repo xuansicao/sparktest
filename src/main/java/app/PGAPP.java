@@ -11,7 +11,7 @@ public class PGAPP {
     public static void main(String[] args) {
 
         //获取57连接
-       // Connection con = JDBCUtil.getConnection();
+        Connection con = JDBCUtil.getConnection();
         //解锁57
         //PGUnlock.trunPG(con);
 
@@ -23,8 +23,8 @@ public class PGAPP {
 
 
         //查询hive数据
-        //HiveToPG.toPG();
-        //PGTruncate.trunData2(con,"dataman.test_lock_pid");
+        HiveToPG.toPG();
+        PGTruncate.trunData2(con,"dataman.test_lock_pid");
 
 
 
