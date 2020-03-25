@@ -6,9 +6,10 @@ import commen.PGUnlock;
 import utills.JDBCUtil;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 public class PGAPP {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
 
         //获取57连接
         Connection con = JDBCUtil.getConnection();
@@ -16,16 +17,17 @@ public class PGAPP {
         //PGUnlock.trunPG(con);
 
         //57清空
-       // PGTruncate.trunData(con);
+        // PGTruncate.trunData(con);
 
         //写入数据
-       // HiveToPG.toPG();
+        // HiveToPG.toPG();
+
+        con.close();
 
 
         //查询hive数据
         HiveToPG.toPG();
         //PGTruncate.trunData2(con,"dataman.test_lock_pid");
-
 
 
     }
