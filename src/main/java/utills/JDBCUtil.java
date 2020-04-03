@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Properties;
 
@@ -14,13 +15,8 @@ public class JDBCUtil {
     private static String user = null;
     private static String password = null;
     private static String driver = null;
-    private static String url3 = null;
-
-    //PG 108服务器
-    private static String url2 = null;
-    private static String user2 = null;
-    private static String password2 = null;
-    private static Connection con = null;
+    static Properties properties = null;
+    static Connection con =null;
 
     public static String getUrl() {
         return url;
@@ -34,49 +30,26 @@ public class JDBCUtil {
         return password;
     }
 
+    public static Properties getProperties() {
+        return properties;
+    }
+
     public static String getDriver() {
         return driver;
-    }
-
-    public static String getUrl3() {
-        return url3;
-    }
-
-    public static String getUrl2() {
-        return url2;
-    }
-
-    public static String getUser2() {
-        return user2;
-    }
-
-    public static String getPassword2() {
-        return password2;
-    }
-
-    public static Connection getCon() {
-        return con;
     }
 
     static {
 
         try {
-            Properties properties = new Properties();
+            properties = new Properties();
             ClassLoader classLoader = JDBCUtil.class.getClassLoader();
-            URL resource = classLoader.getResource("JDBCInfo_properties");
+            URL resource = classLoader.getResource("JDBCInfo.properties");
             String path = resource.getPath();
             properties.load(new FileInputStream(path));
 
-            //57
             url = properties.getProperty("url");
-            user = properties.getProperty("user");
-            password = properties.getProperty("password");
             driver = properties.getProperty("driver");
-            url3 = properties.getProperty("url3");
 
-            url2 = properties.getProperty("url2");
-            user2 = properties.getProperty("user2");
-            password2 = properties.getProperty("password2");
 
             Class.forName(driver);
 
@@ -88,26 +61,27 @@ public class JDBCUtil {
     /*
     获取连接
      */
-
     //57
     public static Connection getConnection() {
         try {
-            con = DriverManager.getConnection(url, user, password);
+            con = DriverManager.getConnection(url,properties);
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return con;
     }
+    //关闭连接
+    public static void closeConnection( Connection con){
+        try {
+            if(con != null){
+                con.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
-//    //108 康师傅
-//    public static Connection getConnection2() {
-//        try {
-//            con = DriverManager.getConnection(url2, user2, password2);
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return con;
-//    }
+    }
+
 
 
 }

@@ -14,13 +14,14 @@ public class PGproperties {
         pro.put("driver",JDBCUtil.getDriver());
         return pro;
     }
-    //108
-    public static Properties getPro2() {
-        pro = new Properties();
-        pro.put("user2", JDBCUtil.getUser2());
-        pro.put("password2",JDBCUtil.getPassword2());
-        pro.put("driver",JDBCUtil.getDriver());
-        return pro;
-    }
+
+
+//    //108
+//    public static Properties getPro2() {
+//        pro = new Properties();
+//        pro.put("user2", JDBCUtil.getUser2());
+//        pro.put("password2",JDBCUtil.getPassword2());
+//        return pro;
+//    }
 
 }

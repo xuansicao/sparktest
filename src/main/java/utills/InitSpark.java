@@ -13,7 +13,7 @@ public class InitSpark {
         SparkSession spark = SparkSession
                 .builder()
                 .appName("SparkToPG")
-                .master("local[4]")
+                .master("local[3]")
                 .config("spark.sql.warehouse.dir", "/warehouse/tablespace/managed/hive")
                 .config("hive.metastore.uris", "thrift://namenode.gaialab.ai:9083")
                 .config("spark.debug.maxToStringFields","300")

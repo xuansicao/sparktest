@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6578d31e-c499-4df5-903f-5b7cbb24937f" name="Default Changelist" comment="使用注解查询数据库">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/druid.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HiveTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MD5Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testdruidTemplate/TestDruid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testdruidTemplate/TestTemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/PGAPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/PGAPP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commen/HiveToPG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commen/HiveToPG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commen/PGTruncate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commen/PGTruncate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commen/PGproperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commen/PGproperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utills/InitSpark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utills/InitSpark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utills/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utills/JDBCUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/JDBCInfo_properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/JDBCInfo.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JDBCInfo_properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/PGAPP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/PGAPP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commen/HiveToPG.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commen/HiveToPG.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commen/PGTruncate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commen/PGTruncate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commen/PGproperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commen/PGproperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utills/InitSpark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utills/InitSpark.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utills/JDBCUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utills/JDBCUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,13 +65,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../job/com_gaia_sparkhive" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javateast" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="JUnit.AnnotationTest.test1">
+  <component name="RunManager" selected="JUnit.MD5Test.testmd5">
     <configuration name="PGAPP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.PGAPP" />
       <module name="sparktopg_test" />
@@ -66,11 +85,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnnotationTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HiveToPG.toPG" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sparktopg_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="commen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="commen" />
+      <option name="MAIN_CLASS_NAME" value="commen.HiveToPG" />
+      <option name="METHOD_NAME" value="toPG" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MD5Test.testmd5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sparktopg_test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AnnotationTest" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="MAIN_CLASS_NAME" value="MD5Test" />
+      <option name="METHOD_NAME" value="testmd5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDruid.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sparktopg_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testdruidTemplate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testdruidTemplate" />
+      <option name="MAIN_CLASS_NAME" value="testdruidTemplate.TestDruid" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTemplate.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sparktopg_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testdruidTemplate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testdruidTemplate" />
+      <option name="MAIN_CLASS_NAME" value="testdruidTemplate.TestTemplate" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -78,8 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AnnotationTest.test1" />
+        <item itemvalue="JUnit.MD5Test.testmd5" />
+        <item itemvalue="JUnit.TestTemplate.test" />
         <item itemvalue="Application.PGAPP" />
+        <item itemvalue="JUnit.TestDruid.test" />
+        <item itemvalue="JUnit.HiveToPG.toPG" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +184,13 @@
       <workItem from="1584499100248" duration="783000" />
       <workItem from="1584609321327" duration="1219000" />
       <workItem from="1584930538011" duration="1669000" />
-      <workItem from="1585104660743" duration="3234000" />
+      <workItem from="1585104660743" duration="11600000" />
+      <workItem from="1585187443348" duration="2398000" />
+      <workItem from="1585273233222" duration="2403000" />
+      <workItem from="1585532991069" duration="23678000" />
+      <workItem from="1585710997009" duration="1798000" />
+      <workItem from="1585796919881" duration="4000" />
+      <workItem from="1585878999035" duration="2615000" />
     </task>
     <task id="LOCAL-00001" summary="spark测试">
       <created>1584425276252</created>
@@ -158,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585107396013</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="使用注解查询数据库">
+      <created>1585107989103</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585107989103</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,54 +257,82 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="269" y="169" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1583807100665" />
-    <state x="332" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1583826016605">
+    <state x="153" y="196" key="#com.intellij.ide.util.MemberChooser" timestamp="1585556973137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="332" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583826016605" />
-    <state x="54" y="0" key="CommitChangelistDialog2" timestamp="1585107654686">
+    <state x="153" y="196" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585556973137" />
+    <state x="54" y="0" key="CommitChangelistDialog2" timestamp="1585881695382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="54" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585107654686" />
-    <state x="313" y="269" key="FileChooserDialogImpl" timestamp="1585106733628">
+    <state x="54" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585881695382" />
+    <state x="0" y="0" key="DiffContextDialog" timestamp="1585108073274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="313" y="269" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585106733628" />
+    <state x="0" y="0" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585108073274" />
+    <state x="313" y="269" key="FileChooserDialogImpl" timestamp="1585879174091">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="313" y="269" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585879174091" />
     <state x="331" y="228" key="Github.ShareDialog" timestamp="1584433046044">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="331" y="228" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584433046044" />
-    <state width="1382" height="140" key="GridCell.Tab.0.bottom" timestamp="1585107154165">
+    <state width="1215" height="334" key="GridCell.Tab.0.bottom" timestamp="1585881695433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1382" height="140" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585107154165" />
-    <state width="1382" height="140" key="GridCell.Tab.0.center" timestamp="1585107154165">
+    <state width="1215" height="334" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585881695433" />
+    <state width="1215" height="334" key="GridCell.Tab.0.center" timestamp="1585881695432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1382" height="140" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585107154165" />
-    <state width="1382" height="140" key="GridCell.Tab.0.left" timestamp="1585107154165">
+    <state width="1215" height="334" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585881695432" />
+    <state width="1215" height="334" key="GridCell.Tab.0.left" timestamp="1585881695429">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1382" height="140" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585107154165" />
-    <state width="1382" height="140" key="GridCell.Tab.0.right" timestamp="1585107154165">
+    <state width="1215" height="334" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585881695429" />
+    <state width="1215" height="334" key="GridCell.Tab.0.right" timestamp="1585881695432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1382" height="140" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585107154165" />
+    <state width="1215" height="334" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585881695432" />
+    <state width="1177" height="253" key="GridCell.Tab.1.bottom" timestamp="1585564796259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1177" height="253" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585564796259" />
+    <state width="1177" height="253" key="GridCell.Tab.1.center" timestamp="1585564796259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1177" height="253" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585564796259" />
+    <state width="1177" height="253" key="GridCell.Tab.1.left" timestamp="1585564796259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1177" height="253" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585564796259" />
+    <state width="1177" height="253" key="GridCell.Tab.1.right" timestamp="1585564796259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1177" height="253" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585564796259" />
+    <state x="598" y="124" key="Maven.ArtifactSearchDialog" timestamp="1585537667948">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="598" y="124" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585537667948" />
     <state x="-15" y="104" width="916" height="708" key="SettingsEditor" timestamp="1584931092908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-15" y="104" width="916" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584931092908" />
-    <state x="69" y="71" key="Vcs.Push.Dialog.v2" timestamp="1585107889596">
+    <state x="69" y="71" key="Vcs.Push.Dialog.v2" timestamp="1585108166330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="69" y="71" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585107889596" />
-    <state x="213" y="338" key="com.intellij.ide.util.TipDialog" timestamp="1584323290162">
+    <state x="69" y="71" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585108166330" />
+    <state x="213" y="338" key="com.intellij.ide.util.TipDialog" timestamp="1585796920339">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="213" y="338" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584323290162" />
+    <state x="213" y="338" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585796920339" />
     <state x="269" y="447" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584432796451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="269" y="447" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584432796451" />
+    <state x="287" y="252" width="672" height="678" key="search.everywhere.popup" timestamp="1585552626606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="287" y="252" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585552626606" />
     <state x="307" y="128" key="svn.repositoryBrowser" timestamp="1584425296350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

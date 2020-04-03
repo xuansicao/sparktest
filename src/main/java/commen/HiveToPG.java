@@ -3,29 +3,34 @@ package commen;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
+import org.junit.jupiter.api.Test;
 import utills.InitSpark;
 import utills.JDBCUtil;
-
-import java.sql.Connection;
 import java.util.Properties;
 
 public class HiveToPG {
-    public static void toPG() {
+    static Properties pro = null;
 
+    @Test
+    public static void toPG() {
         SparkSession spark = InitSpark.initSpark();
         String url = JDBCUtil.getUrl();
-        Properties pro1 = PGproperties.getPro1();
+        pro = JDBCUtil.getProperties();
+        System.out.println(pro);
 
-        String empsql = "select * from dwd_sftm.dwd_cust limit 2";
-        //Dataset<Row> empDF = spark.sql(empsql);
-        spark.sql(empsql).show();
+        String depsql = "select * from ods_sftm_new.ods_org_dep limit 5";
+        Dataset<Row> empDF = spark.sql(depsql);
+        //spark.sql(depsql).show();
+        //hive写入pg
+        empDF.write().mode("append").jdbc(url,"dataman.test1",pro);
 
-
-//        //hive写入pg
-//        empDF.write().mode("append")
-//                .jdbc(url,"dataman.test1",pro1);
 
         spark.close();
 
     }
+
+
+
+
+
 }
